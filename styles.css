@@ -1,0 +1,159 @@
+/* first mode */
+body{
+    background-color: aliceblue;
+    font-family: "Lilita One", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#switchattach{
+    display:flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: white;
+    border: solid rgb(188, 188, 199) 9px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
+    height: 250px;
+    margin: auto;
+    margin-top: 5vh;
+    color: rgb(144, 144, 152);
+}
+
+/* #button{
+    background-color: #88d0ed; 
+    border-radius: 0 0 12px 12px;
+    width: 12vw;
+    height: 5vh;
+    margin: 0 0 0 70vw;
+}
+
+#button h2 {
+    color: aliceblue;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 0.5vh;
+} */
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #88d0ed; 
+    border-radius: 0 0 12px 12px;
+    border: transparent;
+    width: 12vw;
+    height: 5vh;
+    margin: 0 0 0 70vw;
+    color: aliceblue;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #569ab5;
+    cursor: pointer;
+}
+
+main {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    gap: 3vw;
+}
+
+section {
+    padding: 3vh;
+    border: solid transparent 4px;
+    min-width: 10vw;
+    border-radius: 15px;
+    transition:
+        background-color 0.3s,
+        border 0.3s;
+}
+
+section h3{
+    margin: 5vh 0 2vh 0;
+    color: #4cafd6;
+}
+
+ul li a {
+    color:rgb(103, 103, 109);
+    text-decoration: none;
+}
+nav ul {
+    list-style-type: none;
+}
+ul li {
+    border-radius: 5px;
+    padding: 0.1vw 0.5vw;
+    transition: background-color 0.3s;
+}
+
+section:hover {
+    background-color: white;
+    border: solid rgb(188, 188, 199) 4px;
+}
+
+nav ul li:hover {
+    background-color: rgb(212, 212, 214);
+}
+
+/* second mode */
+body.switch {
+    background-color: #FFF0DF;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+button.switch {
+    background-color: #0000FF;
+    border-radius: 0;
+}
+
+header.switch {
+    background-color: #FECA75;
+    border-radius: 0;
+    border: transparent;
+    color: #DE851D;
+}
+
+main.switch {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+section.switch {
+    border-radius: 0;
+    border: transparent;
+}
+
+section.switch:hover{
+    background-color: #FECA75;
+}
+
+h3.switch {
+    color: #0000FF;
+}
+
+li.switch {
+    border-radius: 0;
+}
+
+li.switch:hover{
+    background-color: #f9e5ae;
+}
+
+li a.switch {
+    color: #F15A24;
+}
