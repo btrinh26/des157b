@@ -31,7 +31,7 @@
             }for (let i = 0; i < lia.length; i++) {
                 lia[i].className = 'switch';
             }
-            namesvg.innerHTML = '<img src="images/name2.svg" alt="name" height="187.5" width="400">';
+            namesvg.innerHTML = '<img src="images/name2.svg" alt="name" height="187" width="400">';
 
             mode = 'orange';
         } else {
@@ -49,7 +49,7 @@
             }for (let i = 0; i < lia.length; i++) {
                 lia[i].removeAttribute('class');
             }
-                namesvg.innerHTML = '<img src="images/name1.svg" alt="name" height="187.5" width="400">';
+                namesvg.innerHTML = '<img src="images/name1.svg" alt="name" height="187" width="400">';
 
             mode = 'blue'
         }
