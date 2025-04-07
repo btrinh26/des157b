@@ -1,9 +1,13 @@
 /* first mode */
 body{
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    background-image: url("images/background1.png");
     font-family: "Lilita One", sans-serif;
     padding: 0;
     margin: 0;
+    transition: 
+        background-color 0.7s,
+        text-transform 0.7s;
 }
 
 #switchattach{
@@ -24,23 +28,21 @@ header{
     margin: auto;
     margin-top: 5vh;
     color: rgb(144, 144, 152);
+
+    transition:
+        background-color 0.7s,
+        border-radius 0.7s,
+        border 0.7s,
+        color 0.7s;
 }
 
-/* #button{
-    background-color: #88d0ed; 
-    border-radius: 0 0 12px 12px;
-    width: 12vw;
-    height: 5vh;
-    margin: 0 0 0 70vw;
+#bannername, h2 {
+    margin: 0;
 }
 
-#button h2 {
-    color: aliceblue;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    margin-top: 0.5vh;
-} */
+h2 {
+    margin-bottom: 2vh;
+}
 
 button {
     display: flex;
@@ -55,6 +57,10 @@ button {
     color: aliceblue;
     font-size: 1.2em;
     font-weight: bold;
+
+    transition:
+        background-color 0.7s,
+        border-radius 0.7s;
 }
 
 button:hover {
@@ -63,12 +69,16 @@ button:hover {
 }
 
 main {
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
+    font-family: "Comfortaa", sans-serif;
+    /* font-optical-sizing: auto; */
+    font-weight: 450;
+    /* font-style: normal; */
     display: flex;
     justify-content: center;
     margin-top: 2vh;
     gap: 3vw;
+
+    transition: font 0.7s;
 }
 
 section {
@@ -76,27 +86,38 @@ section {
     border: solid transparent 4px;
     min-width: 10vw;
     border-radius: 15px;
+
     transition:
-        background-color 0.3s,
-        border 0.3s;
+        background-color 0.7s,
+        border 0.7s,
+        border-radius 0.7s;
+
 }
 
 section h3{
     margin: 5vh 0 2vh 0;
     color: #4cafd6;
+
+    transition: color 0.7s;
 }
 
 ul li a {
     color:rgb(103, 103, 109);
     text-decoration: none;
+
+    transition: color 0.7s;
 }
 nav ul {
     list-style-type: none;
+    padding-left: 0.5vw;
 }
 ul li {
     border-radius: 5px;
     padding: 0.1vw 0.5vw;
-    transition: background-color 0.3s;
+
+    transition:
+        background-color 0.7s,
+        border-radius 0.7s;
 }
 
 section:hover {
@@ -110,7 +131,8 @@ nav ul li:hover {
 
 /* second mode */
 body.switch {
-    background-color: #FFF0DF;
+    /* background-color: #FFF0DF; */
+    background-image: url("images/background2.png");
     font-family: "Inter", sans-serif;
     font-weight: 600;
     text-transform: uppercase;
@@ -120,11 +142,14 @@ button.switch {
     background-color: #0000FF;
     border-radius: 0;
 }
+button.switch:hover {
+    background-color: #416dff;
+}
 
 header.switch {
     background-color: #FECA75;
     border-radius: 0;
-    border: transparent;
+    border: solid transparent 9px;
     color: #DE851D;
 }
 
@@ -135,7 +160,7 @@ main.switch {
 
 section.switch {
     border-radius: 0;
-    border: transparent;
+    border: solid transparent 4px;
 }
 
 section.switch:hover{

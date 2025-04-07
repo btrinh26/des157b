@@ -10,6 +10,7 @@
     const h3 = document.querySelectorAll('h3'); //color
     const li = document.querySelectorAll('ul li'); //border radius, hover
     const lia = document.querySelectorAll('ul li a'); //color
+    const namesvg = document.querySelector('#bannername');
 
     let mode = 'blue';
 
@@ -30,6 +31,7 @@
             }for (let i = 0; i < lia.length; i++) {
                 lia[i].className = 'switch';
             }
+            namesvg.innerHTML = '<img src="images/name2.svg" alt="name" height="187.5" width="400">';
 
             mode = 'orange';
         } else {
@@ -47,6 +49,7 @@
             }for (let i = 0; i < lia.length; i++) {
                 lia[i].removeAttribute('class');
             }
+                namesvg.innerHTML = '<img src="images/name1.svg" alt="name" height="187.5" width="400">';
 
             mode = 'blue'
         }
