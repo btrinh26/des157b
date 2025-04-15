@@ -1,0 +1,59 @@
+video{
+    position: fixed;
+    right: 0;
+    top: 0;
+    min-width:100%;
+    min-height:100%;
+
+    filter: grayscale(20%) saturate(30%) ;
+}
+
+section{
+    position: absolute;
+    z-index: 1;
+    bottom: 2em;
+    right: 2em;
+}
+
+section p {
+    font-family: "Lato", sans-serif;
+    bottom: 0;
+    font-size: 2em;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    padding: 1em;
+    margin: 0 2vw 2vh 0 ;
+    transition: opacity 1s ;
+}
+
+#line1{
+    bottom:0%;
+    left: 0%;
+}
+
+#image1{
+    bottom:10%;
+    left: 10%;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.showing{
+    opacity: 1;
+}
+
+.fa-solid {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 1;
+    font-size: 50px;
+    color: white;
+}
+
+.fa-solid:hover {
+    cursor: pointer;
+}
