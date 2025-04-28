@@ -1,50 +1,50 @@
-[
-    {
+{
+    "point1" : {
         "day": "Friday",
         "date": "4/11",
         "duration": "3 hours 27 min",
         "alert": "You were on your phone for 3 hours 27 min. You can use your phone a little less."
     },
-    {
+    "point2" : {
         "day": "Saturday",
         "date": "4/12",
         "duration": "2 hours 29 min",
         "alert": "You were on your phone for 2 horus 29 min. That's goood!"
     },
-    {
+    "point3" : {
         "day": "Sunday",
         "date": "4/13",
         "duration": "8 hours 13 min",
         "alert": "You were on your phone for 8 hours 13 min. What the heck!"
     },
-    {
+    "point4" : {
         "day": "Monday",
         "date": "4/14",
         "duration": "2 hours 58 min",
         "alert": "You were on your phone for 2 horus 29 min. That's goood!"
     },
-    {
+    "point5" : {
         "day": "Tuesday",
         "date": "4/15",
         "duration": "5 hours 22 min",
         "alert": "You were on your phone for 5 hours 22 min. Use your phone less!"
     },
-    {
+    "point6" : {
         "day": "Wednesday",
         "date": "4/16",
         "duration": "3 hours 42 min",
         "alert": "You were on your phone for 3 hours 42 min. You can use your phone a little less."
     },
-    {
+    "point7" : {
         "day": "Thursday",
         "date": "4/17",
         "duration": "5 hours 01 min",
         "alert": "You were on your phone for 5 hours 1 min. Use your phone less!"
     },
-    {
+    "point8" : {
         "day": "Friday",
         "date": "4/18",
         "duration": "4 hours 34 min",
         "alert": "You were on your phone for 3 hours 34 min. You can use your phone a little less."
     }
-  ]
+}
