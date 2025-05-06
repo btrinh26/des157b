@@ -31,7 +31,6 @@
       }
     });
   
-    // Wait for jQuery + FlexSlider to load
     window.addEventListener('load', function() {
       $('.flexslider').flexslider({
         animation: "slide",
