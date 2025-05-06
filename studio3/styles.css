@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+  
+#canvas-interactive {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.canvas-interactive-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 99%;
+    text-align: center;
+}
+
+#maintext {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 3em;
+    border-radius: 2em;
+    width: 30%;
+}
+
+#maintext p {
+    font-size: 1.5em;
+    font-style: italic;
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
