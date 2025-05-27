@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #fff;
+    color: #222;
+    overflow-x: hidden;
+}
+
+.text-section {
+    padding: 6em 2em 50em 2em;
+    text-align: center;
+}
+
+.keep-later{
+    font-size: 1.6em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.remove-later{
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+p{
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2em;
+    max-width: 900px;
+    margin: 2em auto 0;
+}
+
+.fact{
+    background: white;
+    padding: 1em;
+    border-radius: 12px;
+    font-style: italic;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.chart img{
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.gray{
+    background: #d1d1d1;
+}
+
+.white {
+    background: #fff;
+}
+
+.call{
+    background: #263238;
+    color: white;
+}
+
+.cta-button{
+    display: inline-block;
+    margin-top: 2em;
+    padding: 1em 2em;
+    background: #00c853;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #00a344;
+}
