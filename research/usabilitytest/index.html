@@ -9,68 +9,112 @@
   <link rel="stylesheet" href="styles.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+  
   <script src="script.js" defer></script>
 </head>
 
 <body>
-
-    <!-- Intro -->
+    <!-- Intro Section -->
     <section class="text-section intro" data-aos="fade-up">
-        <p class="keep-later"><em>The year is 2050. My world is very different from yours. But how did we get here?</em></p>
-
-        <!-- <p class="remove-later">there will be more content in the empty spaces below all the headings.</p> -->
+        <p class="intro-text"><em>The year is 2050. My world is very different from yours. But how did we get here?</em></p>
     </section>
 
-    <!-- 2025 Data -->
-    <section class="text-section gray" data-aos="fade-up">
+  <!-- 2025 Data Section -->
+        <section class="text-section gray" data-aos="fade-up" id="section-2025">
         <h2>Climate Change in 2025</h2>
-        <div class="grid">
-            <div class="fact">CO₂ levels hit 400ppm, which is the highest in 3 million years.</div>
-            <div class="fact">The hottest 8 years on record happened after 2015.</div>
-        </div>
-        <p class="data-conclusion">By 2025, scientists made it clear: we were approaching irreversible tipping points. Melting ice, deforestation, and industrial pollution were pushing Earth’s systems to the brink.</p>
+
+            <section class="grid">
+                <article class="fact expandable">
+                    <h3>CO₂: 420ppm</h3>
+                    <p><em>Highest in 3 million years.</em><br>↓</p>
+                    <div class="extra-detail"></div>
+                </article>
+
+                <article class="fact expandable">
+                    <h3>8 Hottest Years</h3>
+                    <p><em>All after 2015.</em><br>↓</p>
+                    <div class="extra-detail"></div>
+                </article>
+
+                <article class="fact expandable">
+                    <h3>Arctic Sea Ice</h3>
+                    <p><em>50% lost since 1980.</em><br>↓</p>
+                    <div class="extra-detail"></div>
+                </article>
+            </section>
+
+        <p class="data-conclusion">In 2025, the Earth showed warning signs. Melting ice and severe weather were just the start.</p>
     </section>
 
-    <!-- Why Did This Happen -->
-    <section class="text-section white" data-aos="fade-up">
+  <!-- Why Did This Happen Section -->
+    <section class="text-section white" data-aos="fade-up" id="why-section">
         <h2>Why did this happen?</h2>
-        <p>For more than a century, our energy, industry, and transportation systems relied on fossil fuel, which pump greenhouse gases into the atmosphere. We ignored the signs until they overwhelmed us.</p>
-        <div class="charts1">
-            <img src="https://placehold.co/600x400"> 
+        <p>We used coal, oil, and gas for too long. It made energy but also pollution. We waited too long to change.</p>
+
+        <div id="chart1">
+            <canvas id="myChart1"></canvas>
+            <p>This chart shows where most of the pollution came from in 2025.</p>
         </div>
+
+        <ul class="bullets" id="hover-facts">
+            <li><strong>Energy:</strong> 33%</li>
+            <li><strong>Industry:</strong> 24%</li>
+            <li><strong>Transport:</strong> 15%</li>
+            <li><strong>Agriculture:</strong> 22%</li>
+        </ul>
+
+        <p id="hover-output">Hover over each item to learn more.</p>
     </section>
 
-    <!-- What Will Happen -->
-    <section class="text-section gray" data-aos="fade-up">
-        <h2>What will happen if this continues?</h2>
-        <p>Sea levels will rise a lot. heatwaves will kill thousands, and ecosystems will collapse. Our inaction for climate change will have consequences beyond for thousands of years.</p>
-        <div class="charts2">
-            <img src="https://placehold.co/300x300"> 
-            <img src="https://placehold.co/300x300"> 
-            <img src="https://placehold.co/300x300"> 
-            <img src="https://placehold.co/300x300"> 
-        </div>
-    </section>
-
-    <!-- What Changed -->
     <section class="text-section white" data-aos="fade-up">
-        <h2>What my world did to change this</h2>
-        <p>We transitioned to renewables, built cleaner infrastructure, and rewrote laws for to better climate change. It wasn’t easy, but it worked. The world began to heal.</p>
+        <h2>Emissions by Country (2021)</h2>
+        <p>This chart shows the largest greenhouse gas emitters globally.</p>
+
+        <div id="chart2">
+            <canvas id="myChart2"></canvas>
+        </div>
     </section>
 
-    <!-- What the World Looks Like Now -->
-    <section class="text-section gray" data-aos="fade-up">
-        <h2>This is what my world looks like now</h2>
-        <p>Clean air. Healthy Ecosystems. some more stuff here </p>
-    </section>
+  <!-- What Will Happen -->
+  <section class="text-section gray" data-aos="fade-up">
+    <h2>What will happen if this continues?</h2>
+    <p>
+      Sea levels will rise a lot. Heatwaves will kill thousands, and ecosystems will collapse. Our inaction for climate change will
+      have consequences beyond for thousands of years.
+    </p>
 
-    <!-- Call to Action idk if i will kepe this-->
-    <section class="text-section call" data-aos="zoom-in">
-        <h2>Act before it’s too late</h2>
-        <p>Your choices today shape my tomorrow.</p>
-        <a href="#" class="cta-button">Take Action</a>
-    </section>
+    <div class="chart2">
+      <img src="https://placehold.co/300x300" />
+      <img src="https://placehold.co/300x300" />
+      <img src="https://placehold.co/300x300" />
+      <img src="https://placehold.co/300x300" />
+    </div>
+  </section>
+
+  <!-- What Changed -->
+  <section class="text-section white" data-aos="fade-up">
+    <h2>What my world did to change this</h2>
+    <p>
+      We transitioned to renewables, built cleaner infrastructure, and rewrote laws for to better climate change. It wasn’t easy, but
+      it worked. The world began to heal.
+    </p>
+  </section>
+
+  <!-- What the World Looks Like Now -->
+  <section class="text-section gray" data-aos="fade-up">
+    <h2>This is what my world looks like now</h2>
+    <p>Clean air. Healthy Ecosystems. some more stuff here</p>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="text-section call" data-aos="zoom-in">
+    <h2>Act before it’s too late</h2>
+    <p>Your choices today shape my tomorrow.</p>
+    <a href="#" class="cta-button">Take Action</a>
+  </section>
 </body>
 
 </html>

@@ -9,7 +9,10 @@
   <link rel="stylesheet" href="styles.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+  
   <script src="script.js" defer></script>
 </head>
 
@@ -36,8 +39,9 @@
     <section class="text-section white" data-aos="fade-up">
         <h2>Why did this happen?</h2>
         <p>For more than a century, our energy, industry, and transportation systems relied on fossil fuel, which pump greenhouse gases into the atmosphere. We ignored the signs until they overwhelmed us.</p>
-        <div class="charts1">
-            <img src="https://placehold.co/600x400"> 
+        <div id="chart1"  >
+            <canvas id="myChart1" data-aos="fade-right"></canvas>
+            <p data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam error possimus architecto voluptates, sapiente impedit quia! Reiciendis ab pariatur ipsa.</p>
         </div>
     </section>
 
@@ -45,7 +49,7 @@
     <section class="text-section gray" data-aos="fade-up">
         <h2>What will happen if this continues?</h2>
         <p>Sea levels will rise a lot. heatwaves will kill thousands, and ecosystems will collapse. Our inaction for climate change will have consequences beyond for thousands of years.</p>
-        <div class="charts2">
+        <div class="chart2">
             <img src="https://placehold.co/300x300"> 
             <img src="https://placehold.co/300x300"> 
             <img src="https://placehold.co/300x300"> 

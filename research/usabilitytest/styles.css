@@ -3,69 +3,64 @@ body {
     font-family: 'Inter', sans-serif;
     background: #fff;
     color: #222;
-    overflow-x: hidden;
 }
 
+/* Sections have padding and centered text */
 .text-section {
-    padding: 6em 2em 50em 2em;
+    padding: 4em 2em;
     text-align: center;
 }
 
-.keep-later{
-    font-size: 1.6em;
+/* Special margin for intro section */
+.intro {
+    margin: 35vh;
+}
+
+/* Styling for intro paragraph */
+.intro-text {
+    font-size: 1.5em;
     max-width: 600px;
     margin: 0 auto;
 }
 
-.remove-later{
-    font-size: 1em;
-    margin-top: 1em;
-}
-
-.data-conclusion, .charts1 {
-    padding-top: 2em;
-}
-
-.charts2 {
-     grid-template-columns: 1fr, 1fr;
-}
-
-h2 {
-    font-size: 2em;
-    font-weight: 700;
-    margin-bottom: 1em;
-}
-
-p{
-    max-width: 700px;
-    margin: 0 auto;
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
+/* Grid layout for facts, responsive with gaps */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2em;
     max-width: 900px;
-    margin: 2em auto 0;
+    margin: 2em auto;
 }
 
-.fact{
+/* Style each fact box */
+.fact {
     background: white;
     padding: 1em;
     border-radius: 12px;
-    font-style: italic;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;      
+    transition: 0.3s;    
 }
 
-.chart img{
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.fact:hover {
+    background-color: #f0f0f0;
 }
 
-.gray{
+.extra-detail {
+    max-height: 0;         
+    opacity: 0;           
+    transition: all 0.5s ease;
+    margin-top: 1em;
+    font-style: normal;   
+    color: #333;
+}
+
+.fact.expanded .extra-detail {
+    max-height: 200px;   
+    opacity: 1;          
+}
+
+.gray {
     background: #d1d1d1;
 }
 
@@ -73,23 +68,45 @@ p{
     background: #fff;
 }
 
-.call{
-    background: #263238;
-    color: white;
+#chart1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em auto;
+    max-width: 500px;
 }
 
-.cta-button{
-    display: inline-block;
-    margin-top: 2em;
-    padding: 1em 2em;
-    background: #00c853;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+ul.bullets {
+    list-style-type: none;  
+    padding: 0;
+    max-width: 600px;
+    margin: 2em auto 1em;
+    text-align: left;
+}
+
+ul.bullets li {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    background: #f9f9f9;
     border-radius: 6px;
-    transition: background 0.3s;
+    cursor: pointer;       
+    transition: background 0.2s;
 }
 
-.cta-button:hover {
-    background: #00a344;
+ul.bullets li:hover {
+    background: #e0e0e0;
+}
+
+#hover-output {
+    font-weight: bold;
+}
+
+#chart2 {
+    max-width: 700px;
+    margin: 2em auto;
 }

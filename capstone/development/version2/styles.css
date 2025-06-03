@@ -17,17 +17,25 @@ body {
     margin: 0 auto;
 }
 
-.remove-later{
-    font-size: 1em;
-    margin-top: 1em;
-}
 
-.data-conclusion, .charts1 {
+.data-conclusion {
     padding-top: 2em;
 }
 
-.charts2 {
-     grid-template-columns: 1fr, 1fr;
+#chart1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1em;
+    width:800px;
+}
+
+#myChart1 {
+    width: 200px;
+}
+
+.chart2 {
+    grid-template-columns: 1fr, 1fr;
 }
 
 h2 {
