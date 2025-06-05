@@ -5,34 +5,29 @@ body {
     color: #222;
 }
 
-/* Sections have padding and centered text */
 .text-section {
-    padding: 4em 2em;
+    padding: 4em 2em; 
     text-align: center;
 }
 
-/* Special margin for intro section */
 .intro {
     margin: 35vh;
 }
 
-/* Styling for intro paragraph */
 .intro-text {
     font-size: 1.5em;
     max-width: 600px;
     margin: 0 auto;
 }
 
-/* Grid layout for facts, responsive with gaps */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2em;
     max-width: 900px;
     margin: 2em auto;
 }
 
-/* Style each fact box */
 .fact {
     background: white;
     padding: 1em;
@@ -109,4 +104,68 @@ ul.bullets li:hover {
 #chart2 {
     max-width: 700px;
     margin: 2em auto;
+} 
+
+#temperature-graph {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#chartContainer {
+    position: sticky;
+    top: 15%;
+    left: 33%;
+    transform: translateX(-50%);
+    width: 90vw;
+    max-width: 900px;
+    height: 500px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+canvas {
+    width: 100% ;
+    height: 100% ;
+    display: block;
+    border-radius: 8px;
+    background: #fafafa;
+    border: 1px solid #ddd;
+}
+
+.text-scroll {
+    padding: 20px;
+    overflow-y: visible;
+    position: relative;
+    z-index: 10;
+}
+
+.text-block {
+    margin: 100px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+    transition: background-color 0.3s ease;
+}
+
+.text-block.active {
+    background-color: rgb(255, 216, 216); 
+}
+
+.text-block.active.future {
+    background-color: rgba(216, 235, 255); 
+}
+
+.text-block h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #007bff;
+}
+.past h2 {
+    color: #d62828;
 }
