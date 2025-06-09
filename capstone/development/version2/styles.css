@@ -107,12 +107,12 @@ ul.bullets li:hover {
 } 
 
 #temperature-graph {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 #chartContainer {

@@ -8,7 +8,7 @@
     // waitfor the page load. this fixed wierd page issues with charts and stuff not loading
     document.addEventListener('DOMContentLoaded', function() {
 
-      alert("hey");
+      alert("You are a UC Davis student who doesn't know too much about climate change and its effects. You know it is bad but you don't really know why or the damages it may cause.");
       const facts = document.querySelectorAll('.expandable');
 
       for (let i = 0; i < facts.length; i++) {

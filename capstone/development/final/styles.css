@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #fafafa;
+    color: #111;
+    line-height: 1.6;
+}
+
+p {
+    max-width: 40vw;
+    margin: auto;
+}
+
+.story-section {
+    max-width: 700px;
+    margin: 4em auto;
+    padding: 2em 1.5em;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    color: #222;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-section h2 {
+    font-size: 2.2em;
+    margin-bottom: 0.8em;
+    color: #1f77b4; 
+}
+
+.story-section p {
+    font-size: 1.1em;
+    max-width: 85%;
+    margin: 0 auto;
+    color: #444;
+}
+
+.story-section:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.text-section {
+    padding: 6em 2em;
+    text-align: center;
+}
+
+.intro {
+    margin: 28vh auto;
+    max-width: 700px;
+}
+
+.arrow {
+    width: 20em;
+    text-align: center;
+    color: #333;
+}
+
+.intro-text {
+    font-size: 1.8em;
+    line-height: 1.4;
+    max-width: 700px;
+    margin: 0 auto;
+    font-style: italic;
+    color: #333;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    max-width: 1000px;
+    margin: 0 auto 4em;
+    padding: 0 1em;
+}
+
+.fact {
+    background: #ffffff;
+    padding: 1.5em;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: left;
+}
+
+.fact:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+.extra-detail {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    margin-top: 1em;
+    color: #444;
+}
+
+.fact.expanded .extra-detail {
+    max-height: 300px;
+    opacity: 1;
+}
+
+.gray {
+    background: #f0f2f5;
+}
+
+.white {
+    background: #ffffff;
+}
+
+#chart1, #illustgall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em auto;
+    max-width: 700px;
+    padding: 2em;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    background: #fff;
+}
+
+ul.bullets {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 2em auto 1em;
+    text-align: left;
+}
+
+ul.bullets li {
+    margin-bottom: 1em;
+    padding: 0.75em 1em;
+    background: #eef1f5;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+ul.bullets li:hover {
+    background: #dce3ea;
+}
+
+#hover-output {
+    font-weight: bold;
+    margin-top: 1.5em;
+    font-size: 1.1em;
+    color: #444;
+}
+
+#temperature-graph {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    margin: 6em auto;
+}
+
+#chartContainer {
+    position: sticky;
+    top: 20vh;
+    flex: 1 1;
+    width: 60vw;
+    height: 400px;
+}
+
+.text-scroll {
+    flex: 1 1;
+    padding: 20px;
+}
+
+.text-block {
+    margin: 100px 0;
+    padding: 1.5em;
+    background: #fff;
+    border-left: 6px solid transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.text-block h2 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #1f77b4;
+}
+
+.text-block.past h2{
+    color: #e63946;
+}
+
+.text-block.active.past {
+    border-left: 6px solid #e63946;
+    background-color: #fff5f5;
+}
+
+.text-block.active.future {
+    border-left: 6px solid #457b9d;
+    background-color: #f0faff;
+}
+
+.illustgall {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 5em;
+}
+
+.chart2 img {
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #121212;     
+    color: #BBBBBB;               
+    text-align: center;
+    padding: 1.5em 1em;
+    font-size: 0.9em;
+    border-top: 1px solid #333333; 
+    height: 15vh;
+}
+
+footer p {
+    line-height: 1.4;
+    user-select: none;          
+}
+
+.illustsection{
+    display: flex;
+    gap:5vw;
+}
+
+h3{
+    margin:3em auto 0.5em;
+}
+
+#effects {
+    background-image: url('images/backgournd1.png');
+}
+
+#longp {
+    text-align: left;
+}
+
+.section h3 {
+    color: #2a9d8f;
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ben's Capstone on Climate Change</title>
+
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+  <script src="script.js" defer></script>
+</head> 
+
+<body>
+  
+  <!-- Intro Section -->
+  <section class="text-section intro">
+      <p class="intro-text"><em>The year is 2100. My world's climate is very different from yours. But how did we get here?</em></p>
+  </section>
+  <p class="arrow">Scroll down to continue<br>↓</p>
+  
+  <!-- story of tehri wolrd -->
+  <section id="effects" class="text-section gray">
+    <h1>In 2100, our carbon emissions lead to</h1>
+    <section class="story-section" data-aos="fade-left">
+      <h2>Rising Temperatures</h2>
+      <p>By 2100, global average temperatures have increased by 3.5°C, triggering unprecedented heatwaves worldwide. Many regions become uninhabitable during summer months.</p>
+    </section>
+
+    <section class="story-section" data-aos="fade-right">
+      <h2>Sea Level Rise</h2>
+      <p>Coastal cities face chronic flooding as sea levels rise by over 1 meter, displacing millions and submerging entire island nations.</p>
+    </section>
+
+    <section class="story-section" data-aos="fade-left">
+      <h2>Extreme Weather Events</h2>
+      <p>Hurricanes, wildfires, and droughts intensify in frequency and strength, devastating ecosystems and human communities alike.</p>
+    </section>
+
+    <section class="story-section" data-aos="fade-right">
+      <h2>Biodiversity Loss</h2>
+      <p>Many species face extinction as habitats vanish and climate zones shift, reducing biodiversity and disrupting natural balance.</p>
+    </section>
+
+    <section class="story-section" data-aos="fade-left">
+      <h2>And It Is Irreversible</h2>
+      <p>Once ice sheets melt and species vanish, there’s no going back. Climate change has already locked in damage we can’t reverse</p>
+    </section>
+  </section>
+
+  <!-- overview -->
+      <section class="text-section white" data-aos="fade-up" id="section-2025">
+      <h2>Climate Change Overview In 2025</h2>
+      <h3>Quick facts</h3>
+
+      <section class="grid">
+          <article class="fact expandable">
+              <h3>CO₂: 420ppm</h3>
+              <p><em>Highest in <b>3 million</b> years.</em><br>↓</p>
+              <div class="extra-detail"></div>
+          </article>
+
+          <article class="fact expandable">
+              <h3>8 Hottest Years</h3>
+              <p><em>in recorded history are <b>all</b> after 2015</em><br>↓</p>
+              <div class="extra-detail"></div>
+          </article>
+
+          <article class="fact expandable">
+              <h3>Arctic Sea Ice</h3>
+              <p><em><b>50%</b> of glaciers lost since 1980.</em><br>↓</p>
+              <div class="extra-detail"></div>
+          </article>
+      </section>
+
+      <!-- interactive graph -->
+      <section data-aos="fade-up" id="temperature-graph">
+
+        <div id="chartContainer">
+          <h3>Change in Average Global Temperature (Temperature Anomaly)</h3>
+        <canvas id="tempChart"></canvas>
+        </div>
+
+        <div class="text-scroll" id="textScroll">
+            <div class="text-block past" data-index="1">
+              <h2>1900</h2>
+              <p>The Earth was <b>stable</b>. CO₂ was <b>low</b>, glaciers stood tall, and oceans were calm. But the industrial revolution prompted so much fossil fuel burning. The fossil fuels were putting so much carbon into the air, warming the atmosphere.</p>
+            </div>
+
+            <div class="text-block past" data-index="2">
+              <h2>1920</h2>
+              <p>Carbon in the air started to <b>increase</b>. It didn’t seem like much, but it was the start of something big.</p>
+            </div>
+
+            <div class="text-block past" data-index="3">
+              <h2>1940</h2>
+              <p>Heatwaves hit <b>stronger</b>. Glaciers began <b>melting</b>. But humans kept moving forward with industrialization, using more coal and oil than ever.</p>
+            </div>
+
+            <div class="text-block past" data-index="4">
+              <h2>1960</h2>
+              <p>The oceans started <b>warming</b>. Humanity and it's carbon output began heating the Earth at it's <b>fastest</b> rate in <b>3 million</b> years</p>
+            </div>
+
+            <div class="text-block past" data-index="5">
+              <h2>1980</h2>
+              <p>Storms got <b>stronger</b>. Rain fell <b>harder</b>. Fires burned <b>hotter</b>. Adverse weather effects were stronger on average than <b>ever</b> in recorded history</p>
+            </div>
+
+            <div class="text-block past" data-index="6">
+              <h2>2000</h2>
+              <p>The seas had <b>risen</b>. Coral reefs were <b>dying</b>. Heat was breaking records. Yet humans still pump out as much emissions as ever.</p>
+            </div>
+
+            <div class="text-block past" data-index="7">
+              <h2>2020</h2>
+              <p>Fires, floods, heatwaves were all more <b>common</b> and <b>stronger</b> on average than ever before. The quick change in temperature caused drastic effects to natural disasters that we weren't prepared quickly enough.</p>
+            </div>
+
+             <div class="text-block past" data-index="0">
+              <h2>2025</h2>
+              <p>The world is now around <b>1.6°C hotter</b> than it was before we burned fossil fuels. This is the <b>hottest</b> it’s been in over 100,000 years. Ice is melting faster, oceans are rising quicker, and heatwaves are turning deadly. What scientists warned about is now happening, and we’re not slowing down. </p>
+            </div>
+
+            <div class="text-block future" data-index="8">
+              <h2>2040 (Projection)</h2>
+              <p>We’re deciding what kind of future we want here. Stop the damage now, or face <b>worse</b> storms, <b>deadly heat</b>, and rising seas for generations. This damage is <b>irreversible</b></p>
+            </div>
+
+            <div class="text-block future" data-index="9">
+              <h2>2060 (Projection)</h2>
+              <p>Some places will be <b>too hot</b> to live. Food will be harder to grow. Millions may have to leave their homes. Species will go extinct and ecosystems will be lost.</p>
+            </div>
+
+            <div class="text-block future" data-index="10">
+              <h2>2080 (Projection)</h2>
+              <p>Glaciers are <b>gone</b>. Coral reefs are <b>gone</b>. Summers without Arctic ice. </p>
+            </div>
+            
+            <div class="text-block future" data-index="11">
+              <h2>2100 (Projection)</h2>
+              <p>Heat, floods, and loss will define life on Earth. The landscape is very different from pre-industrial times.</p>
+            </div>
+        </div>
+      </section>
+    </section>
+
+  <!-- what experienced -->
+  <section class="text-section gray" data-aos="fade-up">
+    <h2>What you've already experienced from climate change (2025)</h2>
+    <p>
+      Since 1850(the industrial revolution) carbon emissions have been the main cause of global warming and climate change. 
+    </p>
+
+    <div class="illustgall">
+      
+      <div class="illustsection" data-aos="fade-up">
+        <img src="images/fire.png"/>
+        <p>Longer, hotter summers have made wildfires more intense. In California, fires are burning more land than ever before. Drought, heatwaves, and overgrown forests make the perfect conditions. Entire communities are at risk</p>
+      </div>
+
+      <div class="illustsection" data-aos="fade-up">
+        
+        <p>Warmer oceans give hurricanes more energy. Recent storms like Hurricane Harvey and Ida have dropped record rainfall and caused billions in damage. Places like Louisiana and New York are seeing more flooding from the sheer amount of rain.</p>
+        <img src="images/hurricane.png"/>
+      </div>
+
+      <div class="illustsection" data-aos="fade-up">
+        <img src="images/coral.png"/>
+        <p>Coral reefs are dying as ocean temperatures rise. The Great Barrier Reef has suffered multiple mass bleaching events since 2016. When corals bleach, they lose the tiny organisms that keep them alive, and if the heat lasts too long, they don’t recover.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- !!!!!!!! -->
+  <section class="text-section white" data-aos="fade-up">
+    <h2>Remember, climate change and its effects are irreversible</h2>
+    <p id="longp">
+      Some damage from climate change can’t be undone. Carbon stays in the air for hundreds of years, keeping the planet warm even if we stop emissions. Glaciers are melting and won’t come back anytime soon. The oceans hold a lot of heat and will keep warming the planet. Some places, like coral reefs and rainforests, may not recover. This means we can’t undo the past and change the present, but we can still stop it from getting worse.   
+    </p>
+    </section>
+
+  <!-- what avoid -->
+  <section class="text-section gray" data-aos="fade-up">
+    <h2>What you can do to avoid this</h2>
+    <p>
+      Individual choices matter, but the biggest impact comes from governments, industries, and systems. Real change means holding fossil fuel companies accountable, changing laws, and transforming how we power the world. <br>Here are some ways to do so:
+    </p>
+
+    <div class="grid">
+    <div class="section">
+      <h3>Clean Energy</h3>
+      <p>Shift away from fossil fuels and invest in solar, wind, and other renewable energy sources.</p>
+    </div>
+    <div class="section">
+      <h3>Climate Policy</h3>
+      <p>Create and enforce laws that reduce carbon emissions and encourage green technology.</p>
+    </div>
+    <div class="section">
+      <h3>Infrastructure</h3>
+      <p>Build cities for the future: energy-efficient homes, better transit, and more green spaces.</p>
+    </div>
+    <div class="section">
+      <h3>Protect Nature</h3>
+      <p>Protect forests, oceans, and wetlands. They absorb carbon and help reduce climate risks.</p>
+    </div>
+    <div class="section">
+      <h3>Global Cooperation</h3>
+      <p>Support international agreements and work with other countries to cut emissions together.</p>
+    </div>
+    <div class="section">
+      <h3>Corporate Responsibility</h3>
+      <p>Make companies reduce emissions, report pollution, and invest in sustainable practices.</p>
+    </div>
+  </div>
+  </section>
+
+  <!-- cta -->
+  <footer>
+    <p>Data from the IPCC and EPA</p>
+    <p>Ben Trinh DES 157B</p>
+  </footer>
+</body>
+
+</html>
