@@ -2,7 +2,7 @@
 // Initialize AOS 
     AOS.init({
     duration: 2000,
-    once: false
+    once: false 
     });
 
     // waitfor the page load. this fixed wierd page issues with charts and stuff not loading
