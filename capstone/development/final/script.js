@@ -111,38 +111,38 @@
             let closestDistance = window.innerHeight;
 
             for (let i = 0; i < textBlocks.length; i++) {
-            let rect = textBlocks[i].getBoundingClientRect();
-            let center = rect.top + rect.height / 2;
-            let distance = Math.abs(center - window.innerHeight / 3);
+                let rect = textBlocks[i].getBoundingClientRect();
+                let center = rect.top + rect.height / 2;
+                let distance = Math.abs(center - window.innerHeight / 3);
 
-            if (distance < closestDistance) {
-                closestDistance = distance;
-                closestIndex = i;
-            }
-        }
-
-        for (var i = 0; i < textBlocks.length; i++) {
-            textBlocks[i].classList.remove('active');
-            textBlocks[i].classList.remove('future');
-
-            if (i === closestIndex) {
-                textBlocks[i].classList.add('active');
-                if (i >= 8) {
-                    textBlocks[i].classList.add('future');
+                if (distance < closestDistance) {
+                    closestDistance = distance;
+                    closestIndex = i;
                 }
             }
-        }
 
-        // point radius change
-        for (var i = 0; i < labels.length; i++) {
-            if (closestIndex < 8 && i === closestIndex + 1) {
-                pointRadiusA[i] = 15;
-            } else if (closestIndex >= 8 && i === closestIndex) {
-                pointRadiusA[i] = 15;
-            } else {
-                pointRadiusA[i] = 5;
+            for (var i = 0; i < textBlocks.length; i++) {
+                textBlocks[i].classList.remove('active');
+                textBlocks[i].classList.remove('future');
+
+                if (i === closestIndex) {
+                    textBlocks[i].classList.add('active');
+                    if (i >= 8) {
+                        textBlocks[i].classList.add('future');
+                    }
+                }
             }
-        }
+
+            // point radius change
+            for (var i = 0; i < labels.length; i++) {
+                if (closestIndex < 8 && i === closestIndex + 1) {
+                    pointRadiusA[i] = 15;
+                } else if (closestIndex >= 8 && i === closestIndex) {
+                    pointRadiusA[i] = 15;
+                } else {
+                    pointRadiusA[i] = 5;
+                }
+            }
 
         anomalyChart.update();
         }
